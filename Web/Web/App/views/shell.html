@@ -1,0 +1,25 @@
+﻿<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="fa fa-gear"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span>Clean Zone</span></a>
+    </div>
+
+    <div data-bind="compose: menubar" class="navbar-collapse collapse">
+    </div>
+</div>
+
+<div id="cl-wrapper">
+
+    <div data-bind="compose: sidebar" class="cl-sidebar">
+        <!-- Sidebar Menu -->
+    </div>
+
+    <div class="container-fluid" id="pcont">
+        <div data-bind="router: { transition: 'entrance', cacheViews: true }" class="cl-mcont">
+            <!-- Content -->
+        </div>
+    </div>
+
+</div>
